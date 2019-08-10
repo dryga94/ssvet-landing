@@ -1,0 +1,25 @@
+html,body {
+  font-family: $font-family!important;
+  font-weight: $light;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: $bold;
+  margin: 0;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 1;
+}
+
+p {
+  color: $text-default;
+  margin: 0;
+}
+
+.white {
+  color: $white;
+}

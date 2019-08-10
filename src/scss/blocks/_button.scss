@@ -1,0 +1,85 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 30px;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: $light;
+  font-family: $font-family;
+  border-radius: 100px;
+  transition: .3s ease-in-out;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &--primary {
+    &-stroked {
+      background-color: transparent;
+      border: 2px solid $red;
+      color: $text-default;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: $red;
+        color: $white;
+      }
+    }
+
+    &-flat {
+      background-color: $red;
+      border: 2px solid $red;
+      color: $white;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $text-default;
+        background-color: transparent;
+      }
+    }
+  }
+
+  &--secondary {
+    &-stroked {
+      color: $text-default;
+      border: 2px solid $title;
+      background-color: transparent;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $white;
+        background-color: $title;
+      }
+    }
+
+    &-flat {
+      color: $white;
+      border: 2px solid $title;
+      background-color: $title;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $text-default;
+        background-color: transparent;
+      }
+    }
+  }
+
+  &--bold {
+    font-weight: $bold;
+  }
+
+  &--fullwidth {
+    width: 100%;
+  }
+}
