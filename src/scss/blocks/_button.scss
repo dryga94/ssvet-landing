@@ -1,4 +1,6 @@
-.button {
+.btn {
+  border-radius: 100px;
+  box-shadow: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -7,10 +9,8 @@
   line-height: 1;
   font-weight: $light;
   font-family: $font-family;
-  border-radius: 100px;
-  transition: .3s ease-in-out;
   outline: none;
-  box-shadow: none;
+  transition: .3s ease-in-out;
   cursor: pointer;
 
   &:hover,
@@ -20,66 +20,55 @@
   }
 
   &--primary {
-    &-stroked {
-      background-color: transparent;
-      border: 2px solid $red;
+    background-color: $red;
+    border: 2px solid $red;
+    color: $white;
+
+    &:hover,
+    &:active,
+    &:focus {
       color: $text-default;
-
-      &:hover,
-      &:active,
-      &:focus {
-        background-color: $red;
-        color: $white;
-      }
-    }
-
-    &-flat {
-      background-color: $red;
-      border: 2px solid $red;
-      color: $white;
-
-      &:hover,
-      &:active,
-      &:focus {
-        color: $text-default;
-        background-color: transparent;
-      }
+      background-color: transparent;
     }
   }
 
   &--secondary {
-    &-stroked {
+    background-color: $title;
+    border: 2px solid $title;
+    color: $white;
+
+    &:hover,
+    &:active,
+    &:focus {
       color: $text-default;
-      border: 2px solid $title;
       background-color: transparent;
+    }
+  }
+
+  &--stroked {
+    background-color: transparent;
+    border: 2px solid $red;
+    color: $text-default;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $red;
+      color: $white;
+    }
+
+    &.btn--secondary {
+      border-color: $title;
 
       &:hover,
       &:active,
       &:focus {
-        color: $white;
         background-color: $title;
       }
     }
-
-    &-flat {
-      color: $white;
-      border: 2px solid $title;
-      background-color: $title;
-
-      &:hover,
-      &:active,
-      &:focus {
-        color: $text-default;
-        background-color: transparent;
-      }
-    }
   }
 
-  &--bold {
-    font-weight: $bold;
-  }
-
-  &--fullwidth {
+  &--fluid {
     width: 100%;
   }
 }
