@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
   <head>
-    <title></title>
+    <title>SSVET</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,47 +10,24 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <section class="section-intro">
-      <div class="header">
-        <div class="logo header__logo"><a class="logo__link" href="/"><img class="logo__img" src="./assets/svg/logo.svg" alt="" role="presentation"/></a>
-        </div>
-        <ul class="header__info">
-          <li class="header__info-item">Москва
-          </li>
-          <li class="header__info-item"><a tel="8 800 250 52 06">8 800 250 52 06</a>
-          </li>
-        </ul>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="">ГЛАВНАЯ</a>
-            </li>
-            <li class="nav__item"><a href="">МАГАЗИН</a>
-            </li>
-            <li class="nav__item"><a href="">БРЕНДЫ</a>
-            </li>
-            <li class="nav__item"><a href="">УСЛОВИЯ ДОСТАВКИ</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </section>
+    <section class="section-intro"></section>
     <section class="section-category">
       <div class="container-fluid">
         <div class="row justify-content-center">
           <h3>Освещаем что угодно</h3>
         </div>
         <div class="row">
-          <div class="col-lg-6"><a class="section-category__card" href="javascript(void:0)"><img class="section-category__image" src="https://mirpozitiva.ru/uploads/posts/2017-04/medium/1492620921_06.jpg" alt="">
+          <div class="col-lg-6 col-sm-12 col-md-12"><a class="section-category__card" href="javascript(void:0)"><img class="section-category__image" src="https://mirpozitiva.ru/uploads/posts/2017-04/medium/1492620921_06.jpg" alt="">
               <div class="section-category__desc">Освещение кафе и ресторанов</div></a></div>
-          <div class="col-lg-3"><a class="section-category__card" href="javascript(void:0)"><img class="section-category__image" src="https://mirpozitiva.ru/uploads/posts/2017-04/medium/1492620921_06.jpg" alt="">
+          <div class="col-lg-3 col-sm-12 col-md-6 d-sm-none d-md-block"><a class="section-category__card" href="javascript(void:0)"><img class="section-category__image" src="https://mirpozitiva.ru/uploads/posts/2017-04/medium/1492620921_06.jpg" alt="">
               <div class="section-category__desc section-category__desc--left">Освещение для кухни</div></a></div>
-          <div class="col-lg-3"><a class="section-category__card" href="javascript(void:0)"><img class="section-category__image" src="https://mirpozitiva.ru/uploads/posts/2017-04/medium/1492620921_06.jpg" alt="">
+          <div class="col-lg-3 col-sm-12 col-md-6 d-sm-none d-md-block"><a class="section-category__card" href="javascript(void:0)"><img class="section-category__image" src="https://mirpozitiva.ru/uploads/posts/2017-04/medium/1492620921_06.jpg" alt="">
               <div class="section-category__desc">Офисное освещение</div></a></div>
-          <div class="col-lg-3"><a class="section-category__card" href="javascript(void:0)"><img class="section-category__image" src="https://mirpozitiva.ru/uploads/posts/2017-04/medium/1492620921_06.jpg" alt="">
+          <div class="col-lg-3 col-sm-12 col-md-12"><a class="section-category__card" href="javascript(void:0)"><img class="section-category__image" src="https://mirpozitiva.ru/uploads/posts/2017-04/medium/1492620921_06.jpg" alt="">
               <div class="section-category__desc section-category__desc--left">Освещение для кухни</div></a></div>
-          <div class="col-lg-6"><a class="section-category__card" href="javascript(void:0)"><img class="section-category__image" src="https://mirpozitiva.ru/uploads/posts/2017-04/medium/1492620921_06.jpg" alt="">
+          <div class="col-lg-6 col-sm-12 col-md-6 d-sm-none d-md-block"><a class="section-category__card" href="javascript(void:0)"><img class="section-category__image" src="https://mirpozitiva.ru/uploads/posts/2017-04/medium/1492620921_06.jpg" alt="">
               <div class="section-category__desc">Освещение для кухни</div></a></div>
-          <div class="col-lg-3"><a class="section-category__card" href="javascript(void:0)"><img class="section-category__image" src="https://mirpozitiva.ru/uploads/posts/2017-04/medium/1492620921_06.jpg" alt="">
+          <div class="col-lg-3 col-sm-12 col-md-6"><a class="section-category__card" href="javascript(void:0)"><img class="section-category__image" src="https://mirpozitiva.ru/uploads/posts/2017-04/medium/1492620921_06.jpg" alt="">
               <div class="section-category__desc section-category__desc--left section-category__desc--alt">Освещение для бань и саун
                 <p>Тут должен быть супер крутой текст про освещение бань и саун </p>
               </div></a></div>
@@ -96,8 +73,9 @@
             Подпишитесь на рассылку и узнавайте об акциях и спецпредложениях первыми</div>
         </div>
         <div class="row">
-          <div class="col-lg-8 offset-lg-2">
-            <input type="text" name="">
+          <div class="section-subscribe__mail">
+            <input class="section-subscribe__input" type="mail" name="" placeholder="Введите Ваш Email">
+            <button class="btn btn--primary section-subscribe__button">ПОДПИСАТЬСЯ</button>
           </div>
         </div>
       </div>
@@ -115,8 +93,125 @@
         </div>
       </div>
     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <section class="section-news">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <h3>Освещаем что угодно /<a class="section-news__title-highlighed" href="#">все новости</a></h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-4"><a class="news-card" href="#">
+              <div class="news-card__image"><img src="https://habrastorage.org/files/4bd/3b5/d15/4bd3b5d15e4440c08fcb47fcdd5f0301.jpg" alt=""></div>
+              <h4 class="news-card__title">Черная пятница, скидки до 70%</h4>
+              <div class="news-card__info">
+                <div class="news-card__date"><img src="" alt=""><span>30 september 2018</span></div>
+                <div class="news-card__comments"><img src="" alt=""><span>Комментариев: 6</span></div>
+              </div></a></div>
+          <div class="col-lg-4"><a class="news-card" href="#">
+              <div class="news-card__image"><img src="https://habrastorage.org/files/4bd/3b5/d15/4bd3b5d15e4440c08fcb47fcdd5f0301.jpg" alt=""></div>
+              <h4 class="news-card__title">Черная пятница, скидки до 70%</h4>
+              <div class="news-card__info">
+                <div class="news-card__date"><img src="" alt=""><span>30 september 2018</span></div>
+                <div class="news-card__comments"><img src="" alt=""><span>Комментариев: 6</span></div>
+              </div></a></div>
+          <div class="col-lg-4"><a class="news-card" href="#">
+              <div class="news-card__image"><img src="https://habrastorage.org/files/4bd/3b5/d15/4bd3b5d15e4440c08fcb47fcdd5f0301.jpg" alt=""></div>
+              <h4 class="news-card__title">Черная пятница, скидки до 70%</h4>
+              <div class="news-card__info">
+                <div class="news-card__date"><img src="" alt=""><span>30 september 2018</span></div>
+                <div class="news-card__comments"><img src="" alt=""><span>Комментариев: 6</span></div>
+              </div></a></div>
+        </div>
+      </div>
+    </section>
+    <section class="section-info">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <h3>Люстры и светильники в магазине СВЕТ<span class="red">.ру</span></h3>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <p>Хватит тратить время на поиски светильников, люстр или торшеров – онлайн-гипермаркет СВЕТ.ру то, что вам нужно! Наш интернет магазин предлагает большой ассортимент различных светильников и люстр. В каталоге вы найдете качественные товары проверенных производителей из разных стран (Германия, Россия, Бельгия, Чехия, Австрия и Китай). В магазине вы можете приобрести изделия различного дизайна и ценовой категории. Ассортимент состоит из множества видов: Политикой магазина предусмотрено предоставление накопительных карт для покупателей. Вы сможете собирать баллы и экономить на последующих покупках или приобрести подарочный сертификат на определенную сумму, осчастливив близких и коллег на праздники. В магазине часто проводятся акции и распродажи прошлых коллекций известных марок. Вы можете сэкономить до 70%. Мы организуем доставку с помощью собственной транспортной службы в пределах Москвы и области, а также Санкт-Петербурга. Для отправки по стране используются услуги компаний-перевозчиков. Также наши специалисты могут установить для вас осветительные приборы. При покупке товара у нас вы получаете гарантию на 18 месяцев. Существует система возврата, в случае дефекта или каких либо несоответствий указанному качеству. Для вашего удобства наши консультанты предоставят консультацию по продукции, помогут подобрать наиболее подходящий вариант. Звоните нам прямо сейчас по телефону, указанному на сайте. Покупайте только качественные осветительные приборы с интернет-магазином СВЕТ.ру!</p>
+            <p class="collapse" id="collapsedInfo">Хватит тратить время на поиски светильников, люстр или торшеров – онлайн-гипермаркет СВЕТ.ру то, что вам нужно! Наш интернет магазин предлагает большой ассортимент различных светильников и люстр. В каталоге вы найдете качественные товары проверенных производителей из разных стран (Германия, Россия, Бельгия, Чехия, Австрия и Китай). В магазине вы можете приобрести изделия различного дизайна и ценовой категории. Ассортимент состоит из множества видов: Политикой магазина предусмотрено предоставление накопительных карт для покупателей. Вы сможете собирать баллы и экономить на последующих покупках или приобрести подарочный сертификат на определенную сумму, осчастливив близких и коллег на праздники. В магазине часто проводятся акции и распродажи прошлых коллекций известных марок. Вы можете сэкономить до 70%. Мы организуем доставку с помощью собственной транспортной службы в пределах Москвы и области, а также Санкт-Петербурга. Для отправки по стране используются услуги компаний-перевозчиков. Также наши специалисты могут установить для вас осветительные приборы. При покупке товара у нас вы получаете гарантию на 18 месяцев. Существует система возврата, в случае дефекта или каких либо несоответствий указанному качеству. Для вашего удобства наши консультанты предоставят консультацию по продукции, помогут подобрать наиболее подходящий вариант. Звоните нам прямо сейчас по телефону, указанному на сайте. Покупайте только качественные осветительные приборы с интернет-магазином СВЕТ.ру!</p>
+            <div class="row justify-content-center">
+              <button class="btn btn--primary btn--stroked section-info__btn" id="collapsedButton" data-toggle="collapse" data-target="#collapsedInfo" aria-expanded="false" aria-controls="collapseExample"> <span>Читать далее</span><img src="https://static.thenounproject.com/png/344375-200.png" alt="2"></button>
+            </div>
+          </div>
+        </div>
+        <div class="section-info__nav d-sm-none d-lg-block">
+          <nav class="row nav-filter">
+            <div class="col-lg-2">
+              <h4 class="nav-filter__title">Люстры</h4>
+              <ul class="nav-filter__list">
+                <li class="nav-filter__item"><a href="http://">Потолочные</a></li>
+                <li class="nav-filter__item"><a href="http://">Подвесные</a></li>
+                <li class="nav-filter__item"><a href="http://">Хрустальные люстры</a></li>
+                <li class="nav-filter__item"><a href="http://">Большие люстры</a></li>
+                <li class="nav-filter__item"><a href="http://">Каскадные</a></li>
+                <li class="nav-filter__item"><a href="http://">Лифты для люстр</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2">
+              <h4 class="nav-filter__title">Люстры</h4>
+              <ul class="nav-filter__list">
+                <li class="nav-filter__item"><a href="http://">Потолочные</a></li>
+                <li class="nav-filter__item"><a href="http://">Подвесные</a></li>
+                <li class="nav-filter__item"><a href="http://">Хрустальные люстры</a></li>
+                <li class="nav-filter__item"><a href="http://">Большие люстры</a></li>
+                <li class="nav-filter__item"><a href="http://">Каскадные</a></li>
+                <li class="nav-filter__item"><a href="http://">Лифты для люстр</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2">
+              <h4 class="nav-filter__title">Люстры</h4>
+              <ul class="nav-filter__list">
+                <li class="nav-filter__item"><a href="http://">Потолочные</a></li>
+                <li class="nav-filter__item"><a href="http://">Подвесные</a></li>
+                <li class="nav-filter__item"><a href="http://">Хрустальные люстры</a></li>
+                <li class="nav-filter__item"><a href="http://">Большие люстры</a></li>
+                <li class="nav-filter__item"><a href="http://">Каскадные</a></li>
+                <li class="nav-filter__item"><a href="http://">Лифты для люстр</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2">
+              <h4 class="nav-filter__title">Люстры</h4>
+              <ul class="nav-filter__list">
+                <li class="nav-filter__item"><a href="http://">Потолочные</a></li>
+                <li class="nav-filter__item"><a href="http://">Подвесные</a></li>
+                <li class="nav-filter__item"><a href="http://">Хрустальные люстры</a></li>
+                <li class="nav-filter__item"><a href="http://">Большие люстры</a></li>
+                <li class="nav-filter__item"><a href="http://">Каскадные</a></li>
+                <li class="nav-filter__item"><a href="http://">Лифты для люстр</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2">
+              <h4 class="nav-filter__title">Люстры</h4>
+              <ul class="nav-filter__list">
+                <li class="nav-filter__item"><a href="http://">Потолочные</a></li>
+                <li class="nav-filter__item"><a href="http://">Подвесные</a></li>
+                <li class="nav-filter__item"><a href="http://">Хрустальные люстры</a></li>
+                <li class="nav-filter__item"><a href="http://">Большие люстры</a></li>
+                <li class="nav-filter__item"><a href="http://">Каскадные</a></li>
+                <li class="nav-filter__item"><a href="http://">Лифты для люстр</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2">
+              <h4 class="nav-filter__title">Люстры</h4>
+              <ul class="nav-filter__list">
+                <li class="nav-filter__item"><a href="http://">Потолочные</a></li>
+                <li class="nav-filter__item"><a href="http://">Подвесные</a></li>
+                <li class="nav-filter__item"><a href="http://">Хрустальные люстры</a></li>
+                <li class="nav-filter__item"><a href="http://">Большие люстры</a></li>
+                <li class="nav-filter__item"><a href="http://">Каскадные</a></li>
+                <li class="nav-filter__item"><a href="http://">Лифты для люстр</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>

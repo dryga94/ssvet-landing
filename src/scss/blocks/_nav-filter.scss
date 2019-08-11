@@ -1,0 +1,28 @@
+.nav-filter {
+  margin-top: 60px;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 45px;
+  }
+
+  &__item {
+    a {
+      font-size: 14px;
+      line-height: 24px;
+      color: #6e6d6f;
+      transition: .3s ease-in-out;
+      
+      &:hover {
+        color: $red;
+        text-decoration: none;
+      }
+    }
+  }
+}

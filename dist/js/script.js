@@ -1,1 +1,1 @@
-"use strict";console.log("====");
+"use strict";var infoButton=document.getElementById("collapsedButton");infoButton.addEventListener("click",function(){"false"===infoButton.getAttribute("aria-expanded")?(infoButton.childNodes[1].innerText="Закрыть блок",infoButton.classList.add("section-info__btn--reversed")):(infoButton.childNodes[1].innerText="Читать далее",infoButton.classList.remove("section-info__btn--reversed"))});
