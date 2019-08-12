@@ -170,10 +170,33 @@ p {
     text-decoration: none;
     color: #ff1717; }
 
-.section-intro {
-  background: #1D1C1F url("/dist/assets/images/header-bg.png") center no-repeat;
-  background-size: cover;
-  height: 600px; }
+.section-brands {
+  padding-top: 65px; }
+  .section-brands h3 {
+    margin-bottom: 45px; }
+  .section-brands__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%; }
+    .section-brands__item img {
+      max-width: 100%;
+      max-height: 100px;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      -webkit-transition: .3s ease-in-out;
+      -o-transition: .3s ease-in-out;
+      transition: .3s ease-in-out; }
+    .section-brands__item:hover img, .section-brands__item:focus img, .section-brands__item:active img {
+      -webkit-filter: grayscale(0);
+      filter: grayscale(0); }
 
 .section-category {
   padding-top: 65px; }
@@ -266,6 +289,66 @@ p {
   .section-feature__icon {
     width: 110px; }
 
+.section-intro {
+  background: #1D1C1F url("/dist/assets/images/header-bg.png") center no-repeat;
+  background-size: cover;
+  height: 600px; }
+
+.news-card {
+  color: initial;
+  text-decoration: initial;
+  padding-bottom: 8px; }
+  .news-card__image {
+    position: relative;
+    margin-bottom: 25px;
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out; }
+    .news-card__image img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      -o-object-position: center;
+      object-position: center; }
+    .news-card__image::before {
+      content: '';
+      display: block;
+      padding-top: 50%; }
+  .news-card__info {
+    margin-top: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+  .news-card__date, .news-card__comments {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .news-card__date img, .news-card__comments img {
+      width: 26px;
+      height: 26px; }
+    .news-card__date span, .news-card__comments span {
+      font-size: 14px;
+      margin-left: 10px;
+      color: #999999; }
+  .news-card__comments {
+    margin-left: 30px; }
+  .news-card:hover {
+    text-decoration: none;
+    color: initial; }
+    .news-card:hover .news-card__image {
+      -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); }
+
 .section-subscribe {
   padding: 45px 0;
   background-color: #1d1d21; }
@@ -330,17 +413,25 @@ p {
       -webkit-filter: grayscale(0);
       filter: grayscale(0); }
 
-.section-news {
-  padding-top: 60px;
-  padding-bottom: 60px; }
-  .section-news h3 {
-    margin-bottom: 60px; }
-  .section-news__title-highlighed {
-    color: #ff1717;
-    font-weight: 300;
-    text-decoration: underline; }
-    .section-news__title-highlighed:hover {
-      color: #ff1717; }
+.nav-filter {
+  margin-top: 60px; }
+  .nav-filter__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+  .nav-filter__title {
+    text-transform: uppercase;
+    margin-bottom: 45px; }
+  .nav-filter__item a {
+    font-size: 14px;
+    line-height: 24px;
+    color: #6e6d6f;
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out; }
+    .nav-filter__item a:hover {
+      color: #ff1717;
+      text-decoration: none; }
 
 .section-info {
   padding: 65px 0;
@@ -362,3 +453,15 @@ p {
       -webkit-transform: rotateZ(180deg);
       -ms-transform: rotate(180deg);
       transform: rotateZ(180deg); }
+
+.section-news {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  .section-news h3 {
+    margin-bottom: 60px; }
+  .section-news__title-highlighed {
+    color: #ff1717;
+    font-weight: 300;
+    text-decoration: underline; }
+    .section-news__title-highlighed:hover {
+      color: #ff1717; }
