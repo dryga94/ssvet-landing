@@ -17,6 +17,7 @@
   &:active,
   &:focus {
     outline: none;
+    box-shadow: none;
   }
 
   &--primary {
@@ -25,8 +26,7 @@
     color: $white;
 
     &:hover,
-    &:active,
-    &:focus {
+    &:active {
       color: $text-default;
       background-color: transparent;
     }
@@ -38,8 +38,7 @@
     color: $white;
 
     &:hover,
-    &:active,
-    &:focus {
+    &:active {
       color: $text-default;
       background-color: transparent;
     }
@@ -51,8 +50,7 @@
     color: $text-default;
 
     &:hover,
-    &:active,
-    &:focus {
+    &:active {
       background-color: $red;
       color: $white;
     }
@@ -61,8 +59,7 @@
       border-color: $title;
 
       &:hover,
-      &:active,
-      &:focus {
+      &:active {
         background-color: $title;
       }
     }

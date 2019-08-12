@@ -1,0 +1,34 @@
+.section-feature {
+  padding: 65px 50px;
+
+  h3 {
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+
+  &__logo-highlight {
+    font-weight: $bold;
+    color: $red;
+  }
+
+  &__card-block {
+    margin-top: 65px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    p {
+      margin-top: 45px;
+      max-width: 185px;
+    }
+  }
+
+  &__icon {
+    width: 110px;
+  }
+}

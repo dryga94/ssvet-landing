@@ -1,1 +1,1 @@
-//@prepros-append ./modules/test-module.js
+//@prepros-append ./modules/button-change.js
