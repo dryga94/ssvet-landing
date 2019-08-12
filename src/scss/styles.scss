@@ -1,9 +1,15 @@
 @import './fonts';
 @import './variables';
+
 @import './utils/mixins';
 @import './utils/functions';
 
 @import './typography';
 
-@import './blocks/import';
-@import './sections/import';
+@import './components/button';
+
+@import './base/base';
+@import './base/header';
+@import './base/footer';
+
+@import './pages/index/index';
